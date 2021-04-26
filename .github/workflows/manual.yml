@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
       - name: create file
         run: echo $(date -Is) > $(date -Is).txt
       - name: Add & Commit
